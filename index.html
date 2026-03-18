@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Coberturas Multioficio</title>
-
-<!-- ═══ PWA ═══ -->
 <meta name="theme-color" content="#E8112D">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="application-name" content="Coberturas">
@@ -13,23 +11,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Coberturas">
 <meta name="description" content="Guía de consulta de coberturas para reparadores colaboradores">
-<meta name="msapplication-TileImage" content="./icons/icon-144.png">
-<meta name="msapplication-TileColor" content="#E8112D">
-
-<!-- Favicons -->
-<link rel="icon" type="image/x-icon" href="./favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="./icons/icon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./icons/icon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="./icons/icon-48.png">
-
-<!-- Manifest -->
-<link rel="manifest" href="./manifest.json">
-
-<!-- Apple Touch Icons -->
-<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="167x167" href="./icons/icon-167.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./icons/icon-152.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./icons/icon-120.png">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -497,10 +478,10 @@
         </div>
         <div class="poliza-item info" style="border-left-color:#795548;">
           <h3>✅ Verifica compatibilidad del daño</h3>
-          <p>Verifica si el daño es compatible con lo indicado en el apartado <strong>"trabajo a realizar"</strong> y valora la cobertura con tus criterios profesionales.</p>
+          <p>Verifica si el daño es compatible con lo indicado en el apartado <strong>"trabajo a realizar"</strong> y <strong>corresponde con la avería</strong>. Valora la cobertura con tus criterios profesionales.</p>
         </div>
         <div class="poliza-item info" style="border-left-color:#795548;">
-          <h3>⚡ Hecho accidental</h3>
+          <h3>💥 Hecho accidental</h3>
           <p>Debe tratarse de un hecho <strong>accidental, aislado, imprevisto e involuntario</strong> y relacionado directamente con la avería localizada.</p>
         </div>
         <div class="poliza-item info" style="border-left-color:#795548;">
@@ -1077,16 +1058,6 @@
   }
 
   showScreen('screen-home');
-</script>
-
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('[SW] Registrado:', reg.scope))
-      .catch(err => console.warn('[SW] Error:', err));
-  });
-}
 </script>
 </body>
 </html>
